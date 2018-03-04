@@ -10,6 +10,6 @@ import retrofit2.http.GET;
  */
 
 public interface RequestInterface {
-    @GET("jsonparsetutorial.txt/")
+    @GET("jsonparsetutorial.txt")
     Call<JSONResponce> getJSON();
 }

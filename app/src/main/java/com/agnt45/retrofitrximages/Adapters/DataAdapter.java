@@ -21,7 +21,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder>  {
     private ArrayList<worldpopulation> worldpopulations = null;
     private View view;
     public DataAdapter(ArrayList<worldpopulation> data) {
-        this.worldpopulations = worldpopulations;
+        this.worldpopulations = data;
     }
 
     @Override
