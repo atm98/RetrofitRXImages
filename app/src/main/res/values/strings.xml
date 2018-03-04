@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">RetrofitRXImages</string>
     <string name="flag_of_the_country">Flag of the Country</string>
+    <string name="full_scrren_image_of_the_flag_selected">full scrren image of the flag selected</string>
 </resources>
