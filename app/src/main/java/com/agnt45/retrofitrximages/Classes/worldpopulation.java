@@ -1,19 +1,31 @@
 package com.agnt45.retrofitrximages.Classes;
 
+import android.content.Intent;
+
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by an160 on 04-03-2018.
  */
 
 public class worldpopulation {
-    private String rank,country
-            ,population,flag;
-    public String getRank() {
+    @SerializedName("rank")
+    private Integer rank;
+
+    public Integer getRank() {
         return rank;
     }
 
-    public void setRank(String rank) {
+    public void setRank(Integer rank) {
         this.rank = rank;
     }
+    @SerializedName("country")
+    private String country;
+    @SerializedName("population")
+    private String population;
+    @SerializedName("flag")
+    private String flag;
+
 
     public String getCountry() {
         return country;
@@ -39,7 +51,7 @@ public class worldpopulation {
         this.flag = flag;
     }
 
-    public worldpopulation(String rank, String country, String population, String flag) {
+    public worldpopulation(Integer rank, String country, String population, String flag) {
         this.rank = rank;
         this.country = country;
         this.population = population;

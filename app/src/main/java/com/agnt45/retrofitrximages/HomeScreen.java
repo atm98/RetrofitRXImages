@@ -55,7 +55,7 @@ public class HomeScreen extends AppCompatActivity {
                 JSONResponce jsonResponce = response.body();
 
                 assert jsonResponce != null;
-                data = new ArrayList<>(Arrays.asList(jsonResponce.getWorldpopulations()));
+                data = (ArrayList<worldpopulation>) jsonResponce.getWorldpopulations();
 //                Log.e("Debug",data.toString());
                 adapter = new DataAdapter(data);
                 recyclerView.setAdapter(adapter);
